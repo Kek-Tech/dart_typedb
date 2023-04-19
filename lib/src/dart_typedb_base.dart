@@ -1,6 +1,8 @@
-// TODO: Put public facing types in this file.
+import 'package:dart_typedb/src/api/connection/core_client.dart';
+import 'package:dart_typedb/src/api/connection/typedb_client.dart';
 
-/// Checks if you are awesome. Spoiler: you are.
-class Awesome {
-  bool get isAwesome => true;
+class TypeDB {
+  static TypeDBClient coreClient(String address) {
+    return CoreClient(address);
+  }
 }
