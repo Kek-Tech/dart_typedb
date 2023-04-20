@@ -20,8 +20,12 @@ TODO: List what your package can do. Maybe include images, gifs, or videos.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+1. Clone repo for with typedb proto definition files `git clone https://github.com/vaticle/typedb-protocol`
+2. Ensure [dart protobuf compiler](https://pub.dev/packages/protoc_plugin) is installed : `dart pub global activate protoc_plugin`.
+3. Check installation is working by running `protoc --help`
+4. Cd into typedb-protocol repo: `cd typedb-protocol`
+5. Compile proto definition files into dart files: `protoc --dart_out="grpc:<PATH-TO-PROJECT>/lib/src/typedb-protocol" **/*.proto`
+
 
 ## Usage
 
